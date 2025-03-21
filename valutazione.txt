@@ -1,0 +1,44 @@
+Feedback Progetto di Programmazione ad Oggetti
+Studente: Moretto Nicholas
+Valutazione del progetto: Più che buono
+
+Vincoli obbligatori
++ Soddisfatti
+
+
+Orientamento ad oggetti
++ Incapsulamento
++ Modularità (modello logico e la GUI sono separati)
++ Efficienza e robustezza
++ Uso del polimorfismo limitato, in particolare i metodi virtuali della
+  gerarchia Sensore sono implementati pressoché allo stesso modo nelle
+  classi concrete. Il metodo updateChart è sufficiente a soddisfare
+  il vincolo sul polimorfismo, sebbene contenga alcuni aspetti poco
+  chiari, soprattutto il fatto che ci sia un frammento di codice
+  ricorrente che itera sui sensori dell'autoclave cercando il sensore
+  il cui tipo è lo stesso del parametro tipoSensore. A prima vista
+  sembra sarebbe più semplice passare direttamente il sensore interessato
+  al metodo updateChart, anziché lasciare che lo cerchi ogni volta.
+  In generale questre peculiarità possono essere risolte con un visitor,
+  in modo che non sia necessario ricorrere a metodi come getTipo
+
+
+Funzionalità
++ Funzionalità di ricerca e filtro
+- Migliorabile prevedendo qualche funzionalità addizionale, come
+  la simulazione di sensori difettosi
+
+
+GUI
++ Visualizza i diversi tipi di dato in maniera opportuna
++ Usabile e intuitiva
++ Robusta, gestisce ridimensionamento
++ Utilizza icone
+
+
+Relazione
++ Adeguata
+
+
+Suggerimenti non collegati alla valutazione
+Nessuno.
